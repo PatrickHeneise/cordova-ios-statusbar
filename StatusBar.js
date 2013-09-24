@@ -17,12 +17,12 @@
     cordova.exec(callback, null, 'StatusBar', 'hide', []);
   };
  
-  StatusBar.prototype.translucent = function(callback) {
-    cordova.exec(callback, null, 'StatusBar', 'translucent', []);
+  StatusBar.prototype.whiteTint = function(callback) {
+    cordova.exec(callback, null, 'StatusBar', 'whiteTint', []);
   };
  
-  StatusBar.prototype.opaque = function(callback) {
-    cordova.exec(callback, null, 'StatusBar', 'opaque', []);
+  StatusBar.prototype.blackTint = function(callback) {
+    cordova.exec(callback, null, 'StatusBar', 'blackTint', []);
   };
 
   cordova.addConstructor(function() {
