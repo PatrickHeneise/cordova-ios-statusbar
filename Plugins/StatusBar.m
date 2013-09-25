@@ -29,27 +29,27 @@
 
 @synthesize callbackId = _callbackId;
 
-- (void)translucent:(CDVInvokedUrlCommand*)command {
+- (void)whiteTint:(CDVInvokedUrlCommand*)command {
   CDVPluginResult* pluginResult = nil;
 
-	self.callbackId = command.callbackId;
+    self.callbackId = command.callbackId;
   
   self.webView.backgroundColor = [UIColor whiteColor];
 
-  [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:NO];
-  [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent animated:YES];
+  [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:YES];
+  [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
   
 	pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
   [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
-- (void)opaque:(CDVInvokedUrlCommand*)command {
+- (void)blackTint:(CDVInvokedUrlCommand*)command {
   CDVPluginResult* pluginResult = nil;
 
 	self.callbackId = command.callbackId;
   
-  [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:NO];
-  [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:NO];
+  [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:YES];
+  [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
   
 	pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
   [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];

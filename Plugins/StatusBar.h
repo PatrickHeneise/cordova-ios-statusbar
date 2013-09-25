@@ -36,8 +36,8 @@
 #pragma mark - Instance methods
 
 - (void)show:(CDVInvokedUrlCommand*)command;
-- (void)opaque:(CDVInvokedUrlCommand*)command;
-- (void)translucent:(CDVInvokedUrlCommand*)command;
+- (void)blackTint:(CDVInvokedUrlCommand*)command;
+- (void)whiteTint:(CDVInvokedUrlCommand*)command;
 - (void)hide:(CDVInvokedUrlCommand*)command;
 
 @end
