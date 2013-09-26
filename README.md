@@ -1,6 +1,7 @@
 # StatusBar for Cordova
 
-by Patrick Heneise ([@PatrickHeneise](http://twitter.com/PatrickHeneise), [about.me/PatrickHeneise](http://about.me/PatrickHeneise))
+by Patrick Heneise ([@PatrickHeneise](http://twitter.com/PatrickHeneise), [about.me/PatrickHeneise](http://about.me/PatrickHeneise)).
+
 Addapted for ios7 by jota-v
 
 Various controls for the iPhone status bar (show, hide, translucent, opaque).
