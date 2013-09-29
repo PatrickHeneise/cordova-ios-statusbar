@@ -9,12 +9,14 @@
   <license>Apache 2.0</license>
   <keywords>cordova,status,bar</keywords>
 
-  <asset src="www/StatusBar.js" name="StatusBar.js"/>
+  <js-module src="www/StatusBar.js" name="StatusBar">
+    <clobbers target="navigator.statusbar" />
+  </js-module>
 
   <platform name="ios">
     <config-file target="config.xml" parent="/*">
-      <feature name="Compass">
-          <param name="ios-package" value="StatusBar"/>
+      <feature name="StatusBar">
+          <param name="ios-package" value="StatusBar" />
       </feature>
     </config-file>
 
