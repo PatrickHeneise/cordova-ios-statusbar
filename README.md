@@ -13,7 +13,7 @@ Various controls for the iPhone status bar (show, hide, translucent, opaque).
 
 ##How it works
 
-    statusbar = window.plugins.statusBar;
+    statusbar = navigator.statusBar;
     statusbar.hide();
 
 It's as simple as that. Have fun.
