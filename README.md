@@ -14,7 +14,7 @@ Change the style of the status bar in iOS, in any instance of your app. You can 
 4. Add ```<feature name="StatusBar">
         <param name="ios-package" value="StatusBar" />
     </feature>``` to your config.xml
-5. In Xcode 5 edit your app plist file set UIViewControllerBasedStatusBarAppearance to NO
+5. In Xcode 5 edit your app plist file set "View controller-based status bar appearance" to NO
 
 ##How it works
 
