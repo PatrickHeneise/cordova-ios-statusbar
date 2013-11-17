@@ -9,7 +9,8 @@ Change the style of the status bar in iOS, in any instance of your app. You can 
 
 ## Installation
 
-cordova plugin add https://github.com/jota-v/cordova-ios-statusbar.git
+1. run 'cordova plugin add https://github.com/jota-v/cordova-ios-statusbar.git'
+2. In Xcode 5 edit your app plist file set "View controller-based status bar appearance" to NO
 
 ##How it works
 
