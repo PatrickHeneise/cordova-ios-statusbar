@@ -1,10 +1,8 @@
 //
 //  ActionSheet.js
 //
-// Created by Patrick Heneise, @PatrickHeneise
-//
 // Copyright 2013 Parick Heneise. All rights reserved.
-// MIT Licensed
+// License: Apache 2.0
 
 (function(cordova) {
 	function StatusBar (){};

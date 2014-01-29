@@ -1,27 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
- id="org.apache.cordova.plugins.StatusBar"
- version="0.1.0">
- <name>StatusBar</name>
- <description>
-  Change the style of the status bar in iOS, in any instance of your app. You can show it, hide it, change the tint to white or black. All transitions are animated.
-</description>
-<keywords>phonegap,ios,status bar</keywords>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="com.patrickheneise.cordova.statusbar"
+        version="0.0.1">
 
-<js-module src="www/StatusBar.js" name="StatusBar">
-  <merges target="plugins.statusBar" />
-</js-module>
+  <name>Status Bar</name>
+  <description>Cordova Status Bar Plugin</description>
+  <license>Apache 2.0</license>
+  <keywords>cordova,status,bar</keywords>
 
-<!-- ios -->
-<platform name="ios">
-  <config-file target="config.xml" parent="/*">
-    <feature name="StatusBar">
-      <param name="ios-package" value="StatusBar"/>
-    </feature>
-  </config-file>
+  <js-module src="www/StatusBar.js" name="StatusBar">
+    <clobbers target="navigator.statusbar" />
+  </js-module>
 
-  <header-file src="src/ios/StatusBar.h" />
-  <source-file src="src/ios/StatusBar.m" />
-</platform>
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="StatusBar">
+          <param name="ios-package" value="StatusBar" />
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/StatusBar.h" />
+    <source-file src="src/ios/StatusBar.m" />
+    </platform>
 </plugin>
