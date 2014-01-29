@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         id="com.patrickheneise.cordova.statusbar"
-        version="0.0.1">
+        version="0.0.2">
 
   <name>Status Bar</name>
   <description>Cordova Status Bar Plugin</description>
