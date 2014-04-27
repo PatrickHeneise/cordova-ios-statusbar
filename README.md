@@ -9,7 +9,7 @@ Change the style of the status bar in iOS, in any instance of your app. You can 
 
 ##How it works
 
-    statusbar = navigator.statusBar;
+    statusbar = plugins.statusBar;
     statusbar.hide();
     statusbar.show();
     statusbar.whiteTint();
