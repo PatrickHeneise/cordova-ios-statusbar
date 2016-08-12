@@ -1,3 +1,8 @@
+# Deprecated
+
+Please use https://github.com/phonegap-build/StatusBarPlugin
+
+
 # StatusBar for Cordova
 
 Change the style of the status bar in iOS, in any instance of your app. You can show it, hide it, change the tint to white or black. All transitions are animated. <strong>Cordova 3.+ compatible.</strong>
